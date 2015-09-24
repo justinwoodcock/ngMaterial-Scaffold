@@ -1,0 +1,19 @@
+#loginCard {
+  margin-top: 60px;
+  form[name="login.form"] {
+    button[type="submit"] {
+      i {
+        // margin-top: 15px;
+      }
+    }
+    input:-webkit-autofill {
+      -webkit-box-shadow: 0 0 0px 1000px white inset;
+    }
+  }
+  .ng-messages {
+    .ng-message {
+      width: 100%;
+      text-align: right;
+    }
+  }
+}

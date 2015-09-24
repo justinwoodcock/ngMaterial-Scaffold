@@ -1,0 +1,21 @@
+<md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="nav" md-is-locked-open="$mdMedia('')" md-swipe-left="toggleNav('nav')">
+    <md-toolbar layout="row">
+        <div class="md-toolbar-tools">
+            <h2>Navigation</h2>
+            <md-button class="md-icon-button close-menu-button" aria-label="Menu" ng-click="toggleNav('nav')">
+            <i class="material-icons">close</i>
+        </md-button>
+        </div>
+    </md-toolbar>
+    <md-content>
+        <md-list>
+            <md-list-item class="md-3-line" ng-repeat="item in navItems">
+                <div class="md-list-item-text" ui-sref="{{item.link}}">
+                    <h3>{{item.title}}</h3>
+                    <p>{{item.sub}}</p>
+                </div>
+                <md-divider ng-if="!$last"></md-divider>
+            </md-list-item>
+        </md-list>
+    </md-content>
+</md-sidenav>

@@ -1,0 +1,49 @@
+<md-toolbar layout="row">
+  <div class="md-toolbar-tools" layout-align="start">
+    <md-button class="md-icon-button menu-button" aria-label="Menu" ng-click="toggleNav('nav')">
+        <i class="material-icons">menu</i>
+    </md-button>
+    <h2>ngMaterial Scaffold</h2>
+  </div>
+  <div class="md-toolbar-tools" layout-align="end">
+    <md-menu class="notifications-menu" md-position-mode="target-right target">
+      <md-button class="md-icon-button notification-button" ng-click="openNotifications($mdOpenMenu, $event)">
+        <i class="material-icons">notifications</i>
+      </md-button>
+      <md-menu-content width="4">
+        <md-menu-item class="menu-item">
+          <md-button>
+            <i class="material-icons">home</i>
+            Do the things
+          </md-button>
+        </md-menu-item>
+      </md-menu-content>
+    </md-menu>
+    <md-menu class="user-menu" md-position-mode="target-right target">
+      <md-button class="md-icon-button user-button" ng-click="openUserMenu($mdOpenMenu, $event)">
+        <img ng-src="https://pbs.twimg.com/profile_images/610521029094412288/huiT5UWP.jpg" class="avatar" />
+      </md-button>
+      <md-menu-content width="4">
+      <md-menu-item class="menu-item">
+          <md-button ui-sref="dashboard">
+            <i class="material-icons">dashboard</i>
+            Dashboard
+          </md-button>
+        </md-menu-item>
+        <md-menu-item class="menu-item">
+          <md-button ui-sref="dashboard">
+            <i class="material-icons">account_circle</i>
+            Profile
+          </md-button>
+        </md-menu-item>
+        <!-- <md-menu-divider></md-menu-divider> -->
+        <md-menu-item class="menu-item">
+          <md-button ng-click="logoutUser()">
+            <i class="material-icons">exit_to_app</i>
+            Logout
+          </md-button>
+        </md-menu-item>
+      </md-menu-content>
+    </md-menu>
+  </div>
+</md-toolbar>

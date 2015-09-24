@@ -1,0 +1,21 @@
+#header {
+  .notifications-menu {
+    margin: 0 8px 0 0;
+  }
+  .user-menu {
+    margin: auto 0;
+    padding: 0;
+    width: 38px;
+    height: 38px;
+    .user-button {
+      width: 38px;
+      height: 38px;
+      margin-left: 0;
+    }
+    .avatar {
+      width: 38px;
+      height: 38px;
+      border-radius: 38px;
+    }
+  }
+}

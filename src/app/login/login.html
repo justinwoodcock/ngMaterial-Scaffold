@@ -1,0 +1,37 @@
+<md-content layout="row" layout-align="center">
+    <md-card id="loginCard" layout="column" flex="50" flex-md="75" flex-sm="95">
+        <!-- <img ng-src="assets/images/low-poly-texture-61.jpg" class="md-card-image"> -->
+        <md-card-content>
+          <h1>Login</h1>
+          <p>This is a login form.</p>
+          <form name="loginForm" ng-submit="loginUser()" novalidate>
+            <md-input-container>
+              <md-icon class="md-primary"><i class="material-icons">email</i></md-icon>
+              <input type="email" name="userEmail" required ng-model="username" placeholder="Username">
+              <div class="ng-messages" ng-messages="loginForm.userEmail.$error" ng-if="loginForm.userEmail.$dirty && loginForm.userEmail.$invalid">
+                  <div class="ng-message" ng-message="required">This is required.</div>
+              </div>
+              <!-- <md-tooltip>
+                Username
+              </md-tooltip> -->
+            </md-input-container>
+            <md-input-container flex>
+              <md-icon class="md-primary"><i class="material-icons">vpn_key</i></md-icon>
+              <input type="password" name="userPassword" required ng-model="password" placeholder="Password">
+              <div class="ng-messages" ng-messages="loginForm.userPassword.$error" ng-if="loginForm.userPassword.$dirty && loginForm.userPassword.$invalid">
+                  <div class="ng-message" ng-message="required">This is required.</div>
+              </div>
+              <!-- <md-tooltip>
+                Password
+              </md-tooltip> -->
+            </md-input-container>
+            <md-button id="login-submit-button" type="submit" flex class="md-fab md-primary">
+              <i class="material-icons">done</i>
+              <!-- <md-tooltip>
+                Login
+              </md-tooltip> -->
+            </md-button>
+          </form>
+        </md-card-content>
+    </md-card>
+</md-content>
