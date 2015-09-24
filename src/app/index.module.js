@@ -3,7 +3,6 @@
 import { config } from './index.config';
 import { routerConfig } from './index.route';
 import { runBlock } from './index.run';
-import { MainController } from './main/main.controller';
 import HeaderController from '../app/components/header/header.controller';
 import LoginController from './login/login.controller';
 import SidenavController from '../app/components/sidenav/sidenav.controller';
